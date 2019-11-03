@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+
+<table class="table table-striped table-dark">
+          <tr>
+            <th scope="col"> Sno.</th>
+            <th scope="col">Username</th>
+            <th scope="col">Force Requested</th>
+            <th scope="col">Required Units</th>
+            <th scope="col">Email</th>
+          </tr>
+<!-- </table> -->
+    {% for post in posts %}
+       <!-- <h2>Date : {{ post.date }}</h2>
+       <h3>{{ post.type }}</h3>
+       <p>Units : {{ post.units }}</p>
+       <br> -->
+       <!-- <div  class="border bg-primary border-default ml-auto bd-highlight"><h3>{{ post.username }} {{post.email}}</h3></div>  -->
+       <!-- <table  class="table table-dark"> -->
+        
+          <tr>
+            <th scope="row">{{ post.id }}</th>
+            <td>{{post.username}}</td>
+            <td>{{post.type_force}}</td>
+            <td>{{post.units}}</td>
+            <td>{{post.email}}</td>
+            <!-- <td>Password(by Vidhi)</td> -->
+          </tr>
+        
+      <!-- </table> -->
+       
+    {% endfor %} 
+{% endblock content%}

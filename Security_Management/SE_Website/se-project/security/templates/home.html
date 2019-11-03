@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+       <!-- <h2>Date : {{ post.date }}</h2>
+       <h3>{{ post.type }}</h3>
+       <p>Units : {{ post.units }}</p>
+       <br> -->
+       <div  class="border bg-primary border-default ml-auto bd-highlight"><h3>{{post.email}}</h3></div>
+       
+       
+    {% endfor %} 
+{% endblock content%}
